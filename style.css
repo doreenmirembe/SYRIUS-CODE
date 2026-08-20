@@ -39,3 +39,7 @@
     color: #041632;
     text-decoration: none;
 }
+
+.sticky-bar nav a:hover {
+    color: #E77114;
+}
