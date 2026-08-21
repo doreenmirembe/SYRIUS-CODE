@@ -191,11 +191,10 @@
 
 
 /* ============================= */
-/* RESPONSIVE NAVIGATION */
+/* TABLET / SMALL DESKTOP */
 /* ============================= */
 
 @media (max-width: 1000px) {
-
 
     /* Hide desktop navigation */
 
@@ -216,7 +215,7 @@
 
 
     /* ============================= */
-    /* OPEN MOBILE/TABLET MENU */
+    /* OPEN TABLET / MOBILE MENU */
     /* ============================= */
 
     .sticky-bar nav.show {
@@ -248,17 +247,26 @@
         z-index: 1000;
     }
 }
+
+
+/* ============================= */
+/* PHONE HAMBURGER SIZE */
+/* ============================= */
+
 @media (max-width: 600px) {
 
     .menu-button {
-        width: 48px;
-        height: 48px;
-        margin-right: 18px;
+
+        width: 56px;
+        height: 56px;
+
+        margin-right: 14px;
     }
+
 
     .menu-button span {
-        width: 36px;
-        height: 3px;
-    }
 
+        width: 42px;
+        height: 4px;
+    }
 }
