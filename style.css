@@ -8,6 +8,9 @@
     align-items: center;
 }
 
+
+/* LOGO */
+
 .logo-link {
     width: 219.42px;
     height: 104px;
@@ -21,6 +24,9 @@
     height: 104px;
     display: block;
 }
+
+
+/* DESKTOP NAVIGATION */
 
 .sticky-bar nav {
     display: flex;
@@ -38,8 +44,72 @@
     letter-spacing: -0.45px;
     color: #041632;
     text-decoration: none;
+    white-space: nowrap;
 }
+
+
+/* NAVIGATION HOVER */
 
 .sticky-bar nav a:hover {
     color: #E77114;
+}
+
+
+/* HAMBURGER BUTTON */
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 38px;
+    color: #041632;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+
+/* HAMBURGER HOVER */
+
+.menu-button:hover {
+    color: #E77114;
+}
+
+
+/* HAMBURGER CLICKED / ACTIVE */
+
+.menu-button.active {
+    color: #E77114;
+}
+
+
+/* RESPONSIVE NAVIGATION */
+
+@media (max-width: 1000px) {
+
+    /* Hide desktop navigation */
+    .sticky-bar nav {
+        display: none;
+    }
+
+    /* Show hamburger */
+    .menu-button {
+        display: block;
+        margin-left: auto;
+    }
+
+    /* Show navigation when hamburger is clicked */
+    .sticky-bar nav.show {
+        display: flex;
+        position: absolute;
+        top: 125px;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 30px 0;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
 }
